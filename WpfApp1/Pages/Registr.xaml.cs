@@ -41,6 +41,7 @@ namespace WpfApp1
 			if (rbMen.IsChecked == true) g = 1;
 			if (rbWomen.IsChecked == true) g = 2;
 
+			//проверка пароля на соответствие требованиям
 			var password = pbpas.Password;
 			Regex regex = new Regex("(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9].*[0-9])(?=.*[a-z].*[a-z].*[a-z]).{8,}$");
 			if (regex.IsMatch(password))
@@ -64,6 +65,7 @@ namespace WpfApp1
 			}
 			else
 			{
+				//требования к паролю
 				MessageBox.Show("Пароль должен содержать: \n" +
 					" - минимум 1 заглавную латинскую букву; \n" +
 					" - минимум 3 строчные латинские буквы; \n" +

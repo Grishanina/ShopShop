@@ -38,16 +38,15 @@ namespace WpfApp1.Pages
             {
 				switch (UsersObject.id_role)  
 				{
-					case 2:  // администратор
+					case 2:  // администратор                    Логин: Admin      Пароль: 99M@skin
 						Class1.Mfrm.Navigate(new MainAdmin()); 
                         MessageBox.Show("Привет, администратор");
 						break;
-					case 1:  // пользователь
+					case 1:  // пользователь                     Логин: Marina     Пароль: 3Ss!9ru#
 						Class1.Mfrm.Navigate(new MainUser());
 						MessageBox.Show("Привет, пользователь");
 						break;
 					default:
-						MessageBox.Show("Пока");
 						break;
 				}
             }

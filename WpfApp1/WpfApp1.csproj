@@ -66,10 +66,10 @@
     </ApplicationDefinition>
     <Compile Include="Class1.cs" />
     <Compile Include="ClassBase.cs" />
-    <Compile Include="MainAdmin.xaml.cs">
+    <Compile Include="Pages\MainAdmin.xaml.cs">
       <DependentUpon>MainAdmin.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainUser.xaml.cs">
+    <Compile Include="Pages\MainUser.xaml.cs">
       <DependentUpon>MainUser.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Autorizaciya.xaml.cs">
@@ -119,11 +119,11 @@
     <Compile Include="T_Users.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Page Include="MainAdmin.xaml">
+    <Page Include="Pages\MainAdmin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainUser.xaml">
+    <Page Include="Pages\MainUser.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

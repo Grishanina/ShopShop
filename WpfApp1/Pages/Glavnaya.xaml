@@ -10,11 +10,11 @@
 
     <Grid>
 
-        <DataGrid  Width="650" Height="390" Name="dtusers" ScrollViewer.VerticalScrollBarVisibility="Visible" AutoGenerateColumns="False" FontSize="16" Background="LightGoldenrodYellow">
+        <DataGrid  Width="660" Height="390" Name="dtusers" ScrollViewer.VerticalScrollBarVisibility="Visible" AutoGenerateColumns="False" FontSize="16" Background="LightGoldenrodYellow">
             <DataGrid.Columns >
                 <DataGridTextColumn Header="Имя" Width="100" Binding="{Binding Name}"/>
                 <DataGridTextColumn Header="Фамилия" Width="110" Binding="{Binding Surname}"/>
-                <DataGridTextColumn Header="Отчество" Width="110" Binding="{Binding Patronymic}"/>
+                <DataGridTextColumn Header="Отчество" Width="120" Binding="{Binding Patronymic}"/>
                 <DataGridTextColumn Header="Логин" Width="100" Binding="{Binding Login}"/>
                 <DataGridTextColumn Header="Пол" Width="82" Binding="{Binding T_Pol.Pol}"/>
                 <DataGridTextColumn Header="Дата рождения" Binding="{Binding Birthday, StringFormat=dd.MM.yyyy}"/>
